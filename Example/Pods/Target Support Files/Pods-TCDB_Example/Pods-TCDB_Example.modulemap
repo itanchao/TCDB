@@ -1,0 +1,6 @@
+framework module Pods_TCDB_Example {
+  umbrella header "Pods-TCDB_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module TCDB {
+  umbrella header "TCDB-umbrella.h"
+
+  export *
+  module * { export * }
+}

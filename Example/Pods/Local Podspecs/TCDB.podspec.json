@@ -1,0 +1,22 @@
+{
+  "name": "TCDB",
+  "version": "0.1.0",
+  "summary": "A short description of TCDB.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/itanchao/TCDB",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "itanchao": "itanchao@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/itanchao/TCDB.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TCDB/Classes/**/*"
+}
