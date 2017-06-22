@@ -41,13 +41,13 @@ pod "TCDB"
 * 使用
 
   ~~~swift
-  class func openDB() {
+   func openDB() {
         if TCDB.openDB(DBName: "TCDB-Example.sqlite") {
             creatTab()
         }
       }
     /// 创建表格
-   class func creatTab()  {
+   func creatTab()  {
       //1、编写SQL语句
       let sql = "CREATE TABLE IF NOT EXISTS TB_EXAMPLE_FRIENDLIST \n" +
           "(\n" +
@@ -62,7 +62,7 @@ pod "TCDB"
       }
   }
       /// 插入
-    class func inSertSql(name : String,sex : Bool = false , phone:String ){
+    func inSertSql(name : String,sex : Bool = false , phone:String ){
       let sql = "INSERT INTO TB_EXAMPLE_FRIENDLIST (name,sex,phone) VALUES (\n"
           + "'\(name)',\(sex ? 1 : 0 ),\(phone));";
       TCDB.execSql(.insert, sql: sql) { (result) in
@@ -71,7 +71,7 @@ pod "TCDB"
       }
     }
     /// 更新
-    class func updateSql( id : String , name : String? , sex : Bool , phone : String?) {
+    func updateSql( id : String , name : String? , sex : Bool , phone : String?) {
           var sql  = "UPDATE TB_EXAMPLE_FRIENDLIST SET \n"
           if name != nil {
               sql +=  " name = '\(name!)' ,"
@@ -87,7 +87,7 @@ pod "TCDB"
           }
       }
       /// 查询
-    class func selectSql( str : String?,callback:@escaping (([[String : Any]])->())) {
+    func selectSql( str : String?,callback:@escaping (([[String : Any]])->())) {
         var sql = "SELECT * FROM TB_EXAMPLE_FRIENDLIST \n"
         if  str != nil {
             sql += "WHERE \n"
@@ -100,7 +100,7 @@ pod "TCDB"
         }
     }
     /// 删除
-    class func deleteSql(_ id : String) {
+    func deleteSql(_ id : String) {
         let sql = "DELETE FROM TB_EXAMPLE_FRIENDLIST \n"
             + "WHERE id=\(id);"
         TCDB.execSql(.delete, sql: sql) { (result) in
