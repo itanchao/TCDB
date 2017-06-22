@@ -13,10 +13,13 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		65B1FCA0AC8C661A2D3BE7B0 /* Pods_TCDB_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EADB4CF0DA2BF070F6F4A3 /* Pods_TCDB_Example.framework */; };
-		AD52B8A4530AB8FAA6D6A16E /* Pods_TCDB_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE7A554E2EBC315BC80039C /* Pods_TCDB_Tests.framework */; };
-		D5C9335F1EFAD3B200EF896D /* TCDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C9335E1EFAD3B200EF896D /* TCDB.swift */; };
-		D5C933631EFAD47600EF896D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C933621EFAD47600EF896D /* libsqlite3.tbd */; };
+		73AE242D786CD61DD79E4D94 /* Pods_TCDB_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F656838E7273B1E8171A7098 /* Pods_TCDB_Tests.framework */; };
+		8D1FE0B5530B184602ACB3CA /* Pods_TCDB_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEAE5737E21D003F30CD8C8 /* Pods_TCDB_Example.framework */; };
+		D58BCB811EFBB23B00F77B3D /* TCDBSQLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BCB801EFBB23B00F77B3D /* TCDBSQLManager.swift */; };
+		D58BCB851EFBDC7800F77B3D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BCB841EFBDC7800F77B3D /* TableViewCell.swift */; };
+		D58BCB871EFBDD2E00F77B3D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BCB861EFBDD2E00F77B3D /* Person.swift */; };
+		D58BCB891EFBE01600F77B3D /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BCB881EFBE01600F77B3D /* EditViewController.swift */; };
+		D58BCB8B1EFBE0F500F77B3D /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58BCB8A1EFBE0F500F77B3D /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,11 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17960603968CC86AEBDAEA52 /* Pods-TCDB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDB_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCDB_Tests/Pods-TCDB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1FE7A554E2EBC315BC80039C /* Pods_TCDB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCDB_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2157F9E6C65E971916C11D0A /* Pods-TCDB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDB_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCDB_Tests/Pods-TCDB_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		33EF756E0923BC93DAB4DC34 /* TCDB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TCDB.podspec; path = ../TCDB.podspec; sourceTree = "<group>"; };
-		464795230C10B4050BBFD630 /* Pods-TCDB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDB_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCDB_Example/Pods-TCDB_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1F889C94A11EA483F423EED1 /* Pods-TCDB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDB_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCDB_Tests/Pods-TCDB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TCDB_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCDB_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,14 +44,19 @@
 		607FACE51AFB9204008FA782 /* TCDB_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCDB_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		71BCF7A5F761EF3EBB395300 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		76B32220DAB316C8E122EADB /* Pods-TCDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDB_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCDB_Example/Pods-TCDB_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B8EADB4CF0DA2BF070F6F4A3 /* Pods_TCDB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCDB_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A0502B9E00348103336288 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D5C9335A1EFAD38200EF896D /* TCDB_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCDB_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		D5C9335E1EFAD3B200EF896D /* TCDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCDB.swift; sourceTree = "<group>"; };
-		D5C933601EFAD46D00EF896D /* TCDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TCDB.framework; path = "../../../Library/Developer/Xcode/DerivedData/TCDB-adqdnpjxvgqnsoefxxllvwsbbkdm/Build/Products/Debug-iphonesimulator/TCDB/TCDB.framework"; sourceTree = "<group>"; };
-		D5C933621EFAD47600EF896D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		632FD1A306A0FE41CD4F12C2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6ECC3DE149785F85D929B4AD /* Pods-TCDB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDB_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCDB_Tests/Pods-TCDB_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		925284CE3908E847C7CD9C33 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B877F4EF0B5986D54B9AE1C9 /* Pods-TCDB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDB_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCDB_Example/Pods-TCDB_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C933AFD2CBB226EC49F6AC2A /* Pods-TCDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCDB_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCDB_Example/Pods-TCDB_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CBEAE5737E21D003F30CD8C8 /* Pods_TCDB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCDB_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D58BCB801EFBB23B00F77B3D /* TCDBSQLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCDBSQLManager.swift; sourceTree = "<group>"; };
+		D58BCB841EFBDC7800F77B3D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D58BCB861EFBDD2E00F77B3D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D58BCB881EFBE01600F77B3D /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		D58BCB8A1EFBE0F500F77B3D /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		E3E8D69DEB745DF99F2BE787 /* TCDB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TCDB.podspec; path = ../TCDB.podspec; sourceTree = "<group>"; };
+		F656838E7273B1E8171A7098 /* Pods_TCDB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCDB_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C933631EFAD47600EF896D /* libsqlite3.tbd in Frameworks */,
-				65B1FCA0AC8C661A2D3BE7B0 /* Pods_TCDB_Example.framework in Frameworks */,
+				8D1FE0B5530B184602ACB3CA /* Pods_TCDB_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,13 +72,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD52B8A4530AB8FAA6D6A16E /* Pods_TCDB_Tests.framework in Frameworks */,
+				73AE242D786CD61DD79E4D94 /* Pods_TCDB_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0677D06A99DF4BE2C56BC0EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBEAE5737E21D003F30CD8C8 /* Pods_TCDB_Example.framework */,
+				F656838E7273B1E8171A7098 /* Pods_TCDB_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +95,8 @@
 				607FACD21AFB9204008FA782 /* Example for TCDB */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				B7BD57A357C8FA9EE52DED0E /* Pods */,
-				6779DC0C3F49BC664F8F2284 /* Frameworks */,
+				7F076CE459913E8FDA27C939 /* Pods */,
+				0677D06A99DF4BE2C56BC0EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,14 +112,17 @@
 		607FACD21AFB9204008FA782 /* Example for TCDB */ = {
 			isa = PBXGroup;
 			children = (
-				D5C9335E1EFAD3B200EF896D /* TCDB.swift */,
+				D58BCB861EFBDD2E00F77B3D /* Person.swift */,
+				D58BCB801EFBB23B00F77B3D /* TCDBSQLManager.swift */,
+				D58BCB841EFBDC7800F77B3D /* TableViewCell.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				D58BCB8A1EFBE0F500F77B3D /* AddViewController.swift */,
+				D58BCB881EFBE01600F77B3D /* EditViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				D5C9335A1EFAD38200EF896D /* TCDB_Example-Bridging-Header.h */,
 			);
 			name = "Example for TCDB";
 			path = TCDB;
@@ -141,31 +156,20 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				33EF756E0923BC93DAB4DC34 /* TCDB.podspec */,
-				C0A0502B9E00348103336288 /* README.md */,
-				71BCF7A5F761EF3EBB395300 /* LICENSE */,
+				E3E8D69DEB745DF99F2BE787 /* TCDB.podspec */,
+				925284CE3908E847C7CD9C33 /* README.md */,
+				632FD1A306A0FE41CD4F12C2 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		6779DC0C3F49BC664F8F2284 /* Frameworks */ = {
+		7F076CE459913E8FDA27C939 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D5C933621EFAD47600EF896D /* libsqlite3.tbd */,
-				D5C933601EFAD46D00EF896D /* TCDB.framework */,
-				B8EADB4CF0DA2BF070F6F4A3 /* Pods_TCDB_Example.framework */,
-				1FE7A554E2EBC315BC80039C /* Pods_TCDB_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B7BD57A357C8FA9EE52DED0E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				464795230C10B4050BBFD630 /* Pods-TCDB_Example.debug.xcconfig */,
-				76B32220DAB316C8E122EADB /* Pods-TCDB_Example.release.xcconfig */,
-				17960603968CC86AEBDAEA52 /* Pods-TCDB_Tests.debug.xcconfig */,
-				2157F9E6C65E971916C11D0A /* Pods-TCDB_Tests.release.xcconfig */,
+				B877F4EF0B5986D54B9AE1C9 /* Pods-TCDB_Example.debug.xcconfig */,
+				C933AFD2CBB226EC49F6AC2A /* Pods-TCDB_Example.release.xcconfig */,
+				1F889C94A11EA483F423EED1 /* Pods-TCDB_Tests.debug.xcconfig */,
+				6ECC3DE149785F85D929B4AD /* Pods-TCDB_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -177,12 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TCDB_Example" */;
 			buildPhases = (
-				8EED3E205C5FF6189C10EA09 /* [CP] Check Pods Manifest.lock */,
+				F15ACDE9722FF87D21F998AF /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				DA39365463B1A79F6807D963 /* [CP] Embed Pods Frameworks */,
-				5E5C800AA13E87BDFEB44AB5 /* [CP] Copy Pods Resources */,
+				F49AEEDE2130B17983EBA52D /* [CP] Embed Pods Frameworks */,
+				D318CF172B387A4DB275511B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,12 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "TCDB_Tests" */;
 			buildPhases = (
-				9956D8A7F37D70A910875924 /* [CP] Check Pods Manifest.lock */,
+				48FBDFE73EB5AC5737279260 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				4E7B229AD35896E486B8450F /* [CP] Embed Pods Frameworks */,
-				133BAB216B0E108659D4F5DB /* [CP] Copy Pods Resources */,
+				E4393D62716AB02A8702C1ED /* [CP] Embed Pods Frameworks */,
+				04A0277C417A32D75923B333 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,7 +230,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -275,7 +279,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		133BAB216B0E108659D4F5DB /* [CP] Copy Pods Resources */ = {
+		04A0277C417A32D75923B333 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -290,22 +294,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCDB_Tests/Pods-TCDB_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4E7B229AD35896E486B8450F /* [CP] Embed Pods Frameworks */ = {
+		48FBDFE73EB5AC5737279260 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCDB_Tests/Pods-TCDB_Tests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5E5C800AA13E87BDFEB44AB5 /* [CP] Copy Pods Resources */ = {
+		D318CF172B387A4DB275511B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,7 +324,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCDB_Example/Pods-TCDB_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8EED3E205C5FF6189C10EA09 /* [CP] Check Pods Manifest.lock */ = {
+		E4393D62716AB02A8702C1ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCDB_Tests/Pods-TCDB_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F15ACDE9722FF87D21F998AF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,22 +354,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9956D8A7F37D70A910875924 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DA39365463B1A79F6807D963 /* [CP] Embed Pods Frameworks */ = {
+		F49AEEDE2130B17983EBA52D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,9 +376,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C9335F1EFAD3B200EF896D /* TCDB.swift in Sources */,
+				D58BCB871EFBDD2E00F77B3D /* Person.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				D58BCB8B1EFBE0F500F77B3D /* AddViewController.swift in Sources */,
+				D58BCB891EFBE01600F77B3D /* EditViewController.swift in Sources */,
+				D58BCB851EFBDC7800F77B3D /* TableViewCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				D58BCB811EFBB23B00F77B3D /* TCDBSQLManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,40 +513,35 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 464795230C10B4050BBFD630 /* Pods-TCDB_Example.debug.xcconfig */;
+			baseConfigurationReference = B877F4EF0B5986D54B9AE1C9 /* Pods-TCDB_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TCDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TCDB/TCDB_Example-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76B32220DAB316C8E122EADB /* Pods-TCDB_Example.release.xcconfig */;
+			baseConfigurationReference = C933AFD2CBB226EC49F6AC2A /* Pods-TCDB_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TCDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TCDB/TCDB_Example-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17960603968CC86AEBDAEA52 /* Pods-TCDB_Tests.debug.xcconfig */;
+			baseConfigurationReference = 1F889C94A11EA483F423EED1 /* Pods-TCDB_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -558,7 +561,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2157F9E6C65E971916C11D0A /* Pods-TCDB_Tests.release.xcconfig */;
+			baseConfigurationReference = 6ECC3DE149785F85D929B4AD /* Pods-TCDB_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

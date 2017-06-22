@@ -4,32 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FBSnapshotTestCase.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Nimble-Snapshots.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Nimble.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-TCDB_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-TCDB_Tests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Quick.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -41,42 +21,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>1321E318D10CFDC9F5B93A7952492CCD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>34CD2E3428AB802BACA62286FF5074B1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3A550B121C74E21F1B5B745BCCEE754A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>47DCF3E911245DD8596BC81591B4D3CB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B8D0EB45470D6E626D7FE439E8DD717E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D30B8FE65F327B9CCB7F4BE2771E2891</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D319F7851E4653D1488CB2140FB6092B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
