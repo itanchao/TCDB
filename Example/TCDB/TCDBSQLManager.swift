@@ -15,7 +15,6 @@ class TCDBSQLManager {
         }
     }
     class func inSertPerson(name : String,sex : Bool = false , phone:String ){
-//        let namestr = "'" + name + "'"
         let sql = "INSERT INTO TB_EXAMPLE_FRIENDLIST (name,sex,phone) VALUES (\n"
             + "'\(name)',\(sex ? 1 : 0 ),\(phone));";
         TCDB.execSql(.insert, sql: sql) { (result) in
