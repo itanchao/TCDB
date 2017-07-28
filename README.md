@@ -116,6 +116,8 @@ pod "TCDB"
 
 itanchao, itanchao@gmail.com
 
+博客地址:[TCDB的简单使用](https://itanchao.github.io/2017/06/23/TCDB.html)
+
 ## License
 
 TCDB is available under the MIT license. See the LICENSE file for more info.
