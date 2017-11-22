@@ -119,7 +119,7 @@ public class TCDB {
     /*
      1 一个唯一的对列名
      */
-    static let dbQueue = DispatchQueue(label: "com.itc.database")
+    public static let dbQueue = DispatchQueue(label: "com.itc.database")
     
     /// 打开数据库
     ///
