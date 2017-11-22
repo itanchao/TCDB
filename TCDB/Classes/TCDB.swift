@@ -30,7 +30,7 @@ public class TCDB {
     ///   - sql: sql语法
     ///   - onqueue: 线程
     ///   - callback: 回调
-  public  class func execSql( _ method : EXECSQLMethod, sql : SQL , onqueue : DispatchQueue = dbQueue ,  callback:@escaping ((Any)->()) ){
+  public  class func execSql( _ method : EXECSQLMethod, sql : SQL , onqueue : DispatchQueue = TCDB.dbQueue ,  callback:@escaping ((Any)->()) ){
         // 先把OC字符串转化为C字符串
         let cSQL = sql.cString(using: String.Encoding.utf8)!
         guard method == .select else {
