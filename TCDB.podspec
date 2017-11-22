@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TCDB'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'TCDB 是一个简单的SQLITE库.'
   s.description      = <<-DESC
     TCDB是一个基于Swift3.0写的一个SQLITE库
